@@ -1,0 +1,37 @@
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Node / tooling (in case a build or linter is added later) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.eslintcache
+
+# --- Build & packaging output ---
+dist/
+build/
+*.zip
+*.crx
+*.pem
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Local scratch ---
+tmp/
+*.log
