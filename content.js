@@ -5,6 +5,7 @@
  *   "Department of War"  -> "Department of Defense"
  *   "War Department"     -> "Defense Department"
  *   "Gulf of America"    -> "Gulf of Mexico"
+ *   "Lake America"       -> "Lake Ontario"
  *   "DoW"                -> "DoD"
  *
  * The phrases are matched case-insensitively but the replacement's
@@ -21,7 +22,8 @@
   const PHRASE_REPLACEMENTS = [
     { regex: /\bDepartment of War\b/gi, target: 'Department of Defense' },
     { regex: /\bWar Department\b/gi, target: 'Defense Department' },
-    { regex: /\bGulf of America\b/gi, target: 'Gulf of Mexico' }
+    { regex: /\bGulf of America\b/gi, target: 'Gulf of Mexico' },
+    { regex: /\bLake America\b/gi, target: 'Lake Ontario' }
   ];
 
   // Exact-case, whole-word acronym swap. Not applied case-insensitively
@@ -31,7 +33,7 @@
 
   // Quick pre-check so we don't run the full regex set over every text
   // node on the page (cheap string search first, regex only if needed).
-  const QUICK_CHECK = /war|dow|gulf/i;
+  const QUICK_CHECK = /war|dow|gulf|lake/i;
 
   const SKIP_TAGS = new Set([
     'SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA', 'INPUT',

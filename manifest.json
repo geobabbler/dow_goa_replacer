@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DoW \u2192 DoD Text Replacer",
   "version": "1.0.0",
-  "description": "Replaces 'Department of War' with 'Department of Defense', 'War Department' with 'Defense Department', 'Gulf of America' with 'Gulf of Mexico', and 'DoW' with 'DoD' on every page you view.",
+  "description": "Replaces 'Department of War' with 'Department of Defense', 'War Department' with 'Defense Department', 'Gulf of America' with 'Gulf of Mexico', 'Lake America' with 'Lake Ontario', and 'DoW' with 'DoD' on every page you view.",
   "permissions": ["storage"],
   "host_permissions": ["<all_urls>"],
   "content_scripts": [

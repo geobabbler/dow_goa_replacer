@@ -7,6 +7,7 @@ A Chrome extension that replaces, on every page you view:
 | `Department of War` | `Department of Defense` |
 | `War Department` | `Defense Department` |
 | `Gulf of America` | `Gulf of Mexico` |
+| `Lake America` | `Lake Ontario` |
 | `DoW` | `DoD` |
 
 The phrase replacements are case-insensitive and preserve the original capitalization style (e.g. `WAR DEPARTMENT` → `DEFENSE DEPARTMENT`, `war department` → `defense department`; anything else keeps the replacement's normal casing, like `Gulf of Mexico`). The `DoW` → `DoD` swap only matches that exact capitalization as a whole word, so it won't touch unrelated text like "Dow Jones."
